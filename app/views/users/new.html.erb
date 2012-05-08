@@ -1,0 +1,38 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/assets/stylesheets/welcome.css"/>
+</head>
+
+<h1>Sign up</h1>
+
+<!-- <iframe width="560" height="315" src="http://www.youtube.com/embed/W7xmCQgDxnk" frameborder="0" allowfullscreen></iframe> -->
+
+<body>
+<%= form_for @user do |x| %>
+  <% if @user.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% for message in @user.errors.full_messages %>
+          <li><%= message %></li>
+          <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <p>
+    <%= x.label :email %><br>
+    <%= x.text_field :email %>
+  </p>
+  <p>
+    <%= x.label :password %><br>
+    <%= x.password_field :password %>
+  </p>
+  <p>
+    <%= x.label :password_confirmation %><br>
+    <%= x.password_field :password_confirmation %>
+  </p>
+  
+  <p class="button"><%= x.submit %></p>
+<% end %>
+</body>
+</html>

@@ -1,0 +1,25 @@
+html{
+	color:blue;
+}
+
+body{
+	color:blue;
+	
+}
+
+h1{
+  	font-color: red;
+	font-size:98px;
+	color:red;
+	background-color:10a8df;
+}
+
+div{
+	font-color:red;
+	color:red;
+}
+
+p {
+	font-color: blue;
+	color: red;
+}
