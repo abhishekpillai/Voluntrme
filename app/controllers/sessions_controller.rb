@@ -18,6 +18,6 @@ class SessionsController < ApplicationController
   
   def destroy
     session[:volunteer] = nil
-    redirect_to root_url, :notice => "Logged out!"
+    redirect_to log_in_url, :notice => "Logged out!"
   end
 end
