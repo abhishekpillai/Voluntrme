@@ -1,0 +1,31 @@
+<h1>Sign Up to Be a Volunteer!</h1>
+
+<%= form_for @volunteer do |v| %>
+
+	<ul>
+		<p>	
+			<%= v.label :first_name, "First Name:" %>
+			<%= v.text_field :first_name %>
+		</p>	
+
+		<p>
+			<%= v.label :last_name, "Last Name:" %>
+			<%= v.text_field :last_name %>
+		</p>
+
+		<p>	
+			<%= v.label :email, "Email Address:" %>
+			<%= v.text_field :email %>
+		</p>
+
+		<p>	
+			<%= v.label :phone_number, "Phone Number:" %>
+			<%= v.text_field :phone_number %>	
+		</p>
+
+		<p>
+			<%= v.submit "Become A Volunteer" %>
+		</p>
+	</ul>
+
+<% end %>
