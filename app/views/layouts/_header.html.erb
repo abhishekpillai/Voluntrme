@@ -4,6 +4,7 @@
 	<div id="user_nav">
 	  <% if session[:volunteer] %>
 	  	Logged in!
+			<%= link_to "My Profile Page", volunteer_url %>
 	  	<%= link_to "Log out", log_out_url %>
 	  <% else %>
 	  	<%= link_to "Sign up", new_volunteer_url %> or

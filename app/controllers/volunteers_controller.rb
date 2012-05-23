@@ -11,4 +11,8 @@ class VolunteersController < ApplicationController
     redirect_to root_url, notice: "You are now a Volunteer!"
   end
   
+  def show
+    @volunteer = Volunteer.find(params[:id])
+  end
+  
 end
