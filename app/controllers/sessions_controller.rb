@@ -3,18 +3,21 @@ class SessionsController < ApplicationController
   end
   
   def create
-    user = Volunteer.authenticate(params[:email], params[:password])
+    user = Volunteer.find_by_email(params[:email])
     if user
-      session[:user_id] = user.id
-      redirect_to user_url(user.id), :notice => "Logged in!"
+      if user.authenticate(params[:password])
+        session[:volunteer] = user.id
+        redirect_to root_url, notice: "Logged in!"
+      else
+        redirect_to root_url, notice: "Invalid email or password"
+      end
     else
-      flash.now.alert = "Invalid email or password"
-      render "new"
+      redirect_to root_url, notice: "Bad Email!"
     end
   end
   
   def destroy
-    session[:user_id] = nil
+    session[:volunteer] = nil
     redirect_to root_url, :notice => "Logged out!"
   end
 end
