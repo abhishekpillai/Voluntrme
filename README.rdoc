@@ -1,0 +1,15 @@
+User Stories
+
+1.	I want to see a list of organizations I can volunteer at. 
+2.	I want to be able to sign up for volunteer opportunities/ contact the orginization
+3.	I want to be able to view the organization profile 
+4.	I want to be able to view the volunteer event page and see the other attendees
+5.	I want to have my own profile page 
+6.	I want to see what I have signed up for
+7.	I want to see the organizations my friends volunteer at. 
+8.	I want to be able to see users/friends profiles 
+9.	I want to be able to rate and review my experience
+10.	 I want to be able to search for users, and experiences 
+11.	I want to be able to boast about my experiences through facebook (timeline/newsfeed integration)
+
+
