@@ -1,9 +1,9 @@
 <header>
-	<h1>Volunteer App</h1>
+	<h1><%= link_to "Volunteer App", root_url %></h1>
 	
 	<div id="user_nav">
 	  <% if session[:volunteer] %>
-			<p><%= current.first_name %></p>
+			<p><%= "Yo, #{current.first_name}" %></p>
 			<%= link_to "My Profile Page", volunteer_url(session[:volunteer]) %>
 	  	<%= link_to "Log out", log_out_url %>
 	  <% else %>
