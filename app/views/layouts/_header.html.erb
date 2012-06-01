@@ -3,11 +3,8 @@
 	
 	<div id="user_nav">
 	  <% if session[:volunteer] %>
-<<<<<<< HEAD
 	  	Logged in!
-=======
 			<p><%= "Yo, #{current.first_name}" %></p>
->>>>>>> 6645f3e002c47b0f3a69ac47e560b0cf4f0da7ed
 			<%= link_to "My Profile Page", volunteer_url(session[:volunteer]) %>
 	  	<%= link_to "Log out", log_out_url %>
 	  <% else %>
