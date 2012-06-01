@@ -3,6 +3,6 @@ class Event < ActiveRecord::Base
   
   has_many :registrations
   has_many :volunteers, through: :registrations
-  belongs_to :orgranization
+  belongs_to :organization
   
 end
